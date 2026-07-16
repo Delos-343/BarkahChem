@@ -1,0 +1,106 @@
+import {
+  ArrowRight,
+  ChevronDown,
+  Download,
+  Flame,
+  Fuel,
+  Gauge,
+  BadgeCheck,
+  Boxes,
+  Car,
+  CheckCircle2,
+  ChevronRight,
+  Clock,
+  Container,
+  Disc3,
+  Droplet,
+  Droplets,
+  Factory,
+  FlaskConical,
+  Flower2,
+  Globe,
+  Leaf,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Package,
+  Phone,
+  Quote,
+  Recycle,
+  Search,
+  Send,
+  Settings,
+  ShieldCheck,
+  ShoppingBag,
+  Sparkles,
+  SprayCan,
+  Square,
+  Star,
+  TreePine,
+  Truck,
+  Wind,
+  X,
+  type LucideProps,
+} from "lucide-react";
+
+/**
+ * Central icon registry. Data files reference icons by string key (IconKey),
+ * which keeps the content layer free of component imports and makes it trivial
+ * to move the catalogue to a CMS later.
+ */
+export const iconMap = {
+  ArrowRight,
+  ChevronDown,
+  Download,
+  Flame,
+  Fuel,
+  Gauge,
+  BadgeCheck,
+  Boxes,
+  Car,
+  CheckCircle2,
+  ChevronRight,
+  Clock,
+  Container,
+  Disc3,
+  Droplet,
+  Droplets,
+  Factory,
+  FlaskConical,
+  Flower2,
+  Globe,
+  Leaf,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Package,
+  Phone,
+  Quote,
+  Recycle,
+  Search,
+  Send,
+  Settings,
+  ShieldCheck,
+  ShoppingBag,
+  Sparkles,
+  SprayCan,
+  Square,
+  Star,
+  TreePine,
+  Truck,
+  Wind,
+  X,
+} as const;
+
+export type IconKey = keyof typeof iconMap;
+
+interface IconProps extends LucideProps {
+  name: IconKey;
+}
+
+export function Icon({ name, ...props }: IconProps) {
+  const Glyph = iconMap[name];
+  return <Glyph {...props} />;
+}
