@@ -13,7 +13,7 @@ export const site = {
     en: "From car care and home fragrance to everyday dishwashing and industrial gum rosin - dependable products, all in one place. Message us and we'll sort your order, wherever you are in Indonesia or overseas.",
     id: "Dari perawatan mobil dan pewangi rumah hingga sabun cuci piring harian dan gondorukem industri - produk andalan, semua dalam satu tempat. Kirim pesan dan kami urus pesanan Anda, di mana pun Anda berada di Indonesia maupun luar negeri.",
   } as LocalizedText,
-  url: "https://www.barkahchem.com",
+  url: "http://epmindochemical.com/",
 
   contact: {
     /** International format so wa.me links resolve correctly (62...). */
