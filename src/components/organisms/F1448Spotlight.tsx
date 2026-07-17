@@ -48,7 +48,7 @@ export function F1448Spotlight() {
               </Reveal>
 
               <Reveal delay={0.1}>
-                <p className="mx-auto mt-4 max-w-xl text-center text-sm leading-relaxed text-mist/80 sm:text-base lg:mx-0 lg:text-left">
+                <p className="mx-auto mt-4 max-w-xl text-center text-sm leading-relaxed text-mist/80 sm:text-base lg:mx-0 lg:text-justify">
                   {t(ui.f1448.subtitle)}
                 </p>
               </Reveal>
